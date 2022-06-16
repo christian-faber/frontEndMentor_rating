@@ -1,0 +1,165 @@
+:root {
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%, 0.4);
+  --white: hsl(0, 0%, 100%);
+  --blue: hsl(213, 19%, 18%);
+  --dark-blue: hsl(216, 12%, 8%);
+  --orange: hsl(25, 97%, 53%);
+  --body-font: "Overpass", sans-serif;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: var(--body-font);
+}
+
+.container {
+  width: 97vw;
+  height: 97vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 75%;
+  height: 330px;
+  border: solid black 1px;
+  background-color: var(--blue);
+  align-items: center;
+  border-radius: 20px;
+  position: absolute;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 24px;
+  color: white;
+}
+
+.submit {
+  background-color: var(--orange);
+  line-height: 50px;
+  width: 100%;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 3rem;
+  text-transform: uppercase;
+  border: none;
+}
+
+.submit__div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--orange);
+  background-color: hsl(217, 10%, 20%);
+  border-radius: 3rem;
+  line-height: 3rem;
+  max-width: 70%;
+}
+
+.selected div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 1rem;
+  color: var(--light-grey);
+}
+
+.star {
+  position: relative;
+  background-color: var(--medium-grey);
+  width: 1rem;
+  height: 1rem;
+  padding: 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating {
+  padding-top: 20px;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  line-height: 2.2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating__btn {
+  color: var(--light-grey);
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: var(--medium-grey);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.rating__btn:hover {
+  background-color: var(--orange);
+  cursor: pointer;
+}
+
+.active {
+  background-color: var(--light-grey);
+  color: var(--blue);
+}
+
+.hide {
+  display: none;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.thanks h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.score {
+  margin-left: 1.5px;
+  margin-right: 1.5px;
+}
+
+@media (min-width: 529px) {
+  .card {
+    max-width: 400px;
+  }
+}
